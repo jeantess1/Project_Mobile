@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/headerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#8A2BE2"
+        android:text="TD Jean"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:padding="16dp" />
+    <ImageView
+        android:id="@+id/Logo_poker"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/headerTextView"
+        android:src="@drawable/logo_poker"
+
+        />
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Logo_poker"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@id/emailEditText"
+        android:layout_margin="16dp"/>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordEditText"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/textViewOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Or, login with"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="16dp"/>
+
+    <ImageView
+        android:id="@+id/facebookImageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/textViewOr"
+        android:layout_marginStart="60dp"
+
+        android:src="@drawable/facebook_icon" />
+
+    <ImageView
+        android:id="@+id/googleImageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewOr"
+        android:src="@drawable/logo_google"
+        />
+    <ImageView
+        android:id="@+id/appleImageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="300dp"
+        android:layout_below="@id/textViewOr"
+        android:src="@drawable/logo_apple"
+        />
+    <TextView
+        android:id="@+id/account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t you have account ?"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/googleImageView"
+        android:layout_marginTop="16dp"/>
+    <TextView
+        android:id="@+id/Register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#383bff"
+        android:text=" Register"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/googleImageView"
+        android:layout_toRightOf="@+id/account"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+<!--
+    <ImageView
+        android:id="@+id/appleImageView"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/a"
+        android:layout_below="@id/textViewOr"
+
+        android:layout_margin="16dp"/>
+
+    -->
+
+</RelativeLayout>
